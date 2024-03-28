@@ -56,58 +56,7 @@ void q_short(int low, int high)
 			i++; //step 6
 			cmp_count++;
 		}
-		cmp_count++;
-		while ((arr[j] > pivot) && (j >= low)) //step 7
-		{
-			j--; //step 8
-			cmp_count++;
-		}
-		cmp_count++;
-		if (i < j) // step 9 
-		{
-			swap(i, j);
-		}
 	}
-	if (low < j) { //step11
-		swap(low, j);
-
-	}
-	q_short(low, j - 1); //step12
-	q_short(j + 1, high); // step 13
-
-}
-
-void display() {
-	cout << "\n------------" << endl;
-	cout << "\nSorted Array" << endl;
-	cout << "\n------------" << endl;
-
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << " ";
-	}
-	cout << "\n\nNumber of comparasions: " << cmp_count << endl;
-	cout << "Number of data movements: " << mov_count << endl;
-
-}
-int main()
-{
-	char ch;
-	do {
-		input();
-		q_short(0, n - 1);
-		display();
-		cout << "\n\nDo you want  to continue? (y/n): ";
-		cin >> ch;
-		if (ch == 'n' || ch == 'n')
-			break;
-		system("pause");
-		system("cls");
-
-
-	} while (true);
-	return 0;
-}
 
 
 
