@@ -101,9 +101,12 @@ int main()
 		cin >> ch;
 		if (ch == 'n' || ch == 'n')
 			break;
-		syste
+		system("pause");
+		system("cls");
 
-	}
+
+	} while (true);
+	return 0;
 }
 
 
