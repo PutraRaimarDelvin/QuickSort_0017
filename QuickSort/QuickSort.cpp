@@ -29,13 +29,6 @@ void input() {
 		}
 }
 
-void swap(int x, int y, int mov_count)
-{
-	int temp = arr[x];
-	arr[x] = arr[y];
-	arr[y] = temp;
-	mov_count++ ;
-}
 
 
 
