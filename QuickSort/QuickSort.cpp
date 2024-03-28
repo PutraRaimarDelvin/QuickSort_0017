@@ -37,37 +37,6 @@ void swap(int x, int y, int mov_count)
 	mov_count++ ;
 }
 
-void q_short(int low, int high)
-{
-	int temp;
-	int pivot, i, j;
-	if (low > high) { //step 1
-		return;
-	}
-
-	pivot = arr[low]; //step2
-	i = low + 1;	//step3
-	j = high;		//step 4
-
-
-	int main()
-	{
-		char ch;
-		do {
-			input();
-			q_short(0, n - 1);
-			display();
-			cout << "\n\nDo you want  to continue? (y/n): ";
-			cin >> ch;
-			if (ch == 'n' || ch == 'n')
-				break;
-			system("pause");
-			system("cls");
-
-
-		} while (true);
-		return 0;
-	}
 
 
 
