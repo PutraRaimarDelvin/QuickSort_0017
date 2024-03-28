@@ -86,7 +86,24 @@ void display() {
 	{
 		cout << arr[i] << " ";
 	}
+	cout << "\n\nNumber of comparasions: " << cmp_count << endl;
+	cout << "Number of data movements: " << mov_count << endl;
 
+}
+int main()
+{
+	char ch;
+	do {
+		input();
+		q_short(0, n - 1);
+		display();
+		cout << "\n\nDo you want  to continue? (y/n): ";
+		cin >> ch;
+		if (ch == 'n' || ch == 'n')
+			break;
+		syste
+
+	}
 }
 
 
